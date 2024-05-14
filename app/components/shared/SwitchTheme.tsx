@@ -23,7 +23,7 @@ export default function SwitchTheme() {
    const moon = <BsMoonStars size={18} />;
 
    return (
-      <div className="fixed flex justify-center items-center top-5 right-10">
+      <div className="fixed flex justify-center items-center top-5 right-10 z-50">
          {mounted ? (
             <Switch
                size="lg"

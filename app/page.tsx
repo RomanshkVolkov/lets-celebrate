@@ -12,6 +12,7 @@ export default function Home() {
    return (
       <div className="w-full flex flex-col justify-center items-center mt-10">
          <SwitchTheme />
+
          <h1 className="text-center text-5xl slide-in-top">La boda de</h1>
          <div className="grid md:grid-cols-3 xs:grid-cols-1 gap-2 p-14 xs:mb-16">
             <Image
@@ -36,6 +37,7 @@ export default function Home() {
                className="slide-in-right shadow-01 xs:row-span-2"
             />
          </div>
+
          <div
             className="w-full h-[50vw] min-h-[600px] bg-cover bg-center bg-no-repeat mt-10 shadow-01 relative opacity"
             style={{
@@ -44,6 +46,7 @@ export default function Home() {
                backgroundAttachment: 'fixed',
             }}>
             {cards.cardDate}
+
             <div className="flex flex-col justify-center items-center w-full h-full z-50 bg-transparent">
                <div className="text-center md:p-12 xs:px-4">
                   <strong className="text-5xl">¿Cómo nos conocimos?</strong>
@@ -55,6 +58,7 @@ export default function Home() {
                   <hr />
                </div>
             </div>
+
             {cards.cardTimeRemaining}
          </div>
       </div>
